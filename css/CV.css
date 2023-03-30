@@ -1,5 +1,6 @@
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  Font-size: 1.25rem;
   padding-top: 54px;
   color: #495057;
 }
@@ -66,7 +67,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #DC6C04;
 }
 
 .dev-icons {
@@ -74,7 +75,12 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #DC6C04;
+}
+
+.nav-link {
+  text-align: right;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) !important;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -87,16 +93,22 @@ p.lead {
   outline-color: #2ba131;
 }
 
+.flex-none {
+  flex:none;
+}
+
 @media (min-width: 992px) {
   #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 50px;
+    position: fixed;
     width: 17rem;
     height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #DC6C04;   
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -108,12 +120,14 @@ p.lead {
     max-height: 10rem;
     border: 0.5rem solid #495057;
   }
-  #sideNav .navbar-collapse {
+  #sideNav .navbar-collapse {    
     display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 146px;
+    height: 250px;
   }
   #sideNav .navbar-collapse .navbar-nav {
     flex-direction: column;
@@ -128,9 +142,8 @@ p.lead {
 }
 
 section.CV-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-  max-width: 75rem;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 section.CV-section .CV-item .CV-date {
@@ -138,27 +151,21 @@ section.CV-section .CV-item .CV-date {
 }
 
 @media (min-width: 768px) {
-  section.CV-section {
-    min-height: 100vh;
-  }
   section.CV-section .CV-item .CV-date {
     min-width: 18rem;
   }
-}
-
-@media (min-width: 992px) {
-  section.CV-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+  .CV-container{
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #DC6C04 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #DC6C04 !important;
 }
 
 .text-secondary {
@@ -167,17 +174,17 @@ section.CV-section .CV-item .CV-date {
 }
 
 a {
-  color: #BD5D38;
+  color: #DC6C04;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #BD5D38;
 }
 
 img {
   vertical-align: middle;
   border-style: none;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .img-fluid {
@@ -185,18 +192,9 @@ img {
   height: auto;
 }
 
-@media (max-width: 768px){
-  .img-fluid{
-    max-width: 75%;
-    height: auto;
-  }
-}
-
-@media (max-height: 768px) and (orientation: landscape){
-  .img-fluid{
-    max-width: 25%;
-    height: auto;
-  }
+.col-lg-3{
+  width:50%;
+  padding-bottom: 15px;
 }
 
 .img-fluid:hover {
@@ -249,7 +247,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #BD5D38;
+  background-color: #DC6C04;
   border-color: #BD5D38;
 }
 
@@ -279,24 +277,36 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem #632E1A
 }
 
-@media (max-width: 768px){
-  .btn-download{
+.btn-display{
   display: none;
+}
+
+@media (min-width: 1024px){
+  .btn-download {
+    color: rgba(255,255,255,.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+  
+    width: 137px;
+    height: 29px;
+  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+  }
+  
+  .btn-download:hover {
+    color: #fff;
   }
 }
 
-.btn-download {
-  margin: 10px;
-  position: fixed;
-  top: 60px;
-  right: 80px;
-  color: #fff;
-  background-color: #BD5D38;
-  border-color: #BD5D38;
-}
 
-.btn-download:hover {
-  color: #fff;
-  background-color: #824027;
-  border-color: #632E1A;
-}
+

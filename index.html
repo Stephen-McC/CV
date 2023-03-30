@@ -26,7 +26,7 @@
 <body id="page-top">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <a class="flex-none navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Stephen McCallum</span>
       <span class="d-none d-lg-block">
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
@@ -41,10 +41,10 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#project">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
@@ -57,26 +57,28 @@
         </li>
       </ul>
     </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <form method="get" action="files/Stephen McCallum Software Developer CV.pdf" target="_blank">
+    <form method="get" action="files/Stephen McCallum Software Developer CV.pdf" target="_blank" class="btn-display">
       <button class="btn btn-download">
         <i class="fas fa-download"></i>
         PDF CV
       </button>
     </form>
+  </nav>
 
+  <div class="container-fluid p-0">
     <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0">Stephen
           <span class="text-primary">McCallum</span>
         </h1>
-        <div class="subheading mb-5">Based in Glasgow · +44(0)7476356539 ·
+        <div class="subheading mb-3">Based in Glasgow · +44(0)7476356539 ·
           <a href="mailto:smccallumcareers@gmail.com">smccallumcareers@gmail.com</a>
         </div>
-        <p class="lead mb-5">I'm a product designer, I believe that the most important part of product design is to create something that the end-user enjoys and finds easy to use. Thanks to my product design experience with my own game studio <a href="http://www.latepanda.com/" target="_blank">Late Panda</a>, I always aim to create the most simple to understand features while focusing on the retention of the user. I have experience designing for multiple platforms including; mobile, desktop, TV and tablets as I believe it is important to identify the benefits and costs of each of these platforms. I value the opportunity to better improve my design skills after honest feedback.</p>
+        <p class="lead mb-5">
+          I am a product designer, I believe that the most important part of product design is to create something that the end-user enjoys and finds easy to use. 
+          Thanks to my game design experience with my own game studio <a href="http://www.latepanda.com/" target="_blank">Late Panda</a>, I always aim to create the most simple 
+          to understand features while focusing on the retention of the user. I have experience designing for multiple platforms including; mobile, desktop, TV and tablet as I 
+          believe it is important to identify the benefits and costs of each of these platforms. I value the opportunity to better improve my design skills after honest feedback.</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/stephenmcc1/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
@@ -93,93 +95,103 @@
 
     <hr class="m-0">
 
-    <section class="CV-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="project">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5">Projects</h2>
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="CV-content">
-            <h3 class="mb-0">Creative Director</h3>
-            <div class="subheading mb-3">
-              <a href="http://www.latepanda.com/" target="_blank">Late Panda</a>
-            </div>
-            <p>I co-founded the game studio Late Panda with my partner Elisabeth during our third year of University. Our aim was to improve the factors of the gaming industry that we disagreed with on principle. We worked on multiple projects aiming to tackle different factors of the industry, our largest project 'Skorian Tales' was designed to be the first true mobile role-playing game. However, the large scale of the product and our business inexperience lead to us abandoning the project. We took some time creating other projects such as <a href="https://play.google.com/store/apps/details?id=com.latepanda.EchoesOfHope&gl=GB" target="_blank">Echoes of Hope</a> and our self titled game <a href="https://play.google.com/store/apps/details?id=com.LatePanda.LatePanda" target="_blank">Late Panda</a>, more information on these projects can be found below.</p>
-            <p>My main duties within Late Panda included; leading the development team to follow the design concepts, handling business to business meetings, attending and showcasing at events like <a href="https://www.resonatetotalgaming.com/" target="_blank">Resonate Total Gaming</a>, <a href="https://www.4thegamers.co.uk/" target="_blank">4TG (4 The Gamers)</a> and <a href="https://www.gdconf.com/" target="_blank">GDC (Game Developer Conference)</a>. I would create design documents that would outline what the final product would resemble, then oversee the development of assets ensuring they kept within the same themes and would fit the finished product.</p>
-          </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">July 2013 - Present</span>
-          </div>
-        </div>
+    <!-- Project Grid Items -->
+    <div class="row">
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="CV-content">
-            <h3 class="mb-0">Personal Projects</h3>
-            <br>
-            <p>For several years I would spend my free time developing short stories and long expanding narratives. Over the past decade, I have critically analysed website and software faults and successes in order to improve my own design practices. I have started to join Game Jams to teach myself new skills while also working within a very strict 48-hour timeframe. My first Game Jam was the 2018 Global Game Jam where I joined a group as a silent observer to study another designer at work within one of these jams. I then joined the 2019 GMTK Game Jam where my partner Elisabeth and I developed the short narrative experience <a href="https://late-panda.itch.io/head-ache" target="_blank">Head Ache</a> within the RPG Maker V toolkit.</p>
-            <p>I have been building my knowledge of programming languages since my university days to include Ruby on Rails, PHP, Java and SQL over the past few months. I still consider myself a novice with each language, however, I am seeking to improve each one as programming still interests me.</p>
-            <p>I have also completed an online course with <a href="https://www.shawacademy.com/" target="_blank">Shaw Academy</a> to refresh and build upon my knowledge and experience with HTML and CSS to better understand modern practices.</p>
-          </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">April 2010 - Present</span>
-          </div>
+      <!-- Project Item 1 -->
+      <div class="col-md-5 col-lg-3">
+        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal1">
+          <img class="img-fluid" src="img/EoH 512 Icon.png" alt="Echoes of Hope Icon">
         </div>
       </div>
+
+      <!-- Project Item 2 -->
+      <div class="col-md-5 col-lg-3">
+        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal2">
+          <img class="img-fluid" src="img/LPG Icon 512 v2.png" alt="Late Panda Game Icon">
+        </div>
+      </div>
+
+      <!-- Project Item 3 -->
+      <div class="col-md-5 col-lg-3">
+        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal3">
+          <img class="img-fluid" src="img/TULP-BG.jpg" alt="The Untitled Late Panda Board Game Icon">
+        </div>
+      </div>
+
+      <!-- Project Item 4 -->
+      <div class="col-md-5 col-lg-3">
+        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal4">
+          <img class="img-fluid" src="img/HeadAche.jpg" alt="Head Ache Icon">
+        </div>
+      </div>
+    </div>
     </section>
 
     <hr class="m-0">
 
-      <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="project">
-        <div class="w-100">
-          <h2 class="mb-5">Projects</h2>
+    <section class="CV-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
 
-      <!-- Project Grid Items -->
-      <div class="row">
-
-        <!-- Project Item 1 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal1">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="CV-item">
+          <div class="CV-content">
+            <div class="CV-container mb-3">
+              <div>
+                <h3 class="mb-0">Creative Director</h3>
+                <div class="subheading">
+                  <a href="http://www.latepanda.com/" target="_blank">Late Panda</a>
+                </div>
+              </div>    
+              <div class="CV-date text-md-right">
+                <span class="text-secondary">July 2013 - October 2020</span>
               </div>
             </div>
-            <img class="img-fluid" src="img/EoH 512 Icon.png" alt="Echoes of Hope Icon">
+             <p>
+              I co-founded the game studio Late Panda with my now fiancée Elisabeth during our third year of University. Our aim was to improve the factors of the gaming industry 
+              that we disagreed with on principle. We worked on multiple projects aiming to tackle different factors of the industry, our largest project Skorian Tales was designed to 
+              be the first true mobile role-playing game. However, the large scale of the product and our business inexperience lead to us abandoning the project. We took some time creating 
+              other projects such as <a href="https://play.google.com/store/apps/details?id=com.latepanda.EchoesOfHope&gl=GB" target="_blank">Echoes of Hope</a> and our self titled game  
+              <a href="https://play.google.com/store/apps/details?id=com.LatePanda.LatePanda" target="_blank">Late Panda</a>, more information on these projects can be found below.</p>
+            <p>
+              My main duties within Late Panda included; leading the development team to follow the design concepts, handling business to business meetings, attending and showcasing at 
+              events like <a href="https://www.resonatetotalgaming.com/" target="_blank">Resonate Total Gaming</a>, 
+              <a href="https://www.4thegamers.co.uk/" target="_blank">4TG (4 The Gamers)</a> and <a href="https://www.gdconf.com/" target="_blank">GDC (Game Developer Conference)</a>. 
+              I would create design documents that would outline what the final product would resemble, then oversee the development of assets ensuring they kept within the same themes 
+              and would fit the finished product.</p>
           </div>
         </div>
 
-        <!-- Project Item 2 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal2">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
+        <div class="CV-item mt-5">
+          <div class="CV-content">
+            <div class="CV-container mb-3">
+              <div>
+                <h3 class="mb-0">Personal Projects</h3>
+              </div>    
+              <div class="CV-date text-md-right">
+                <span class="text-secondary">April 2010 - Present</span>
               </div>
             </div>
-            <img class="img-fluid" src="img/LPG Icon 512 v2.png" alt="Late Panda Game Icon">
-          </div>
-        </div>
-
-        <!-- Project Item 3 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal3">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/TULP-BG.jpg" alt="The Untitled Late Panda Board Game Icon">
-          </div>
-        </div>
-
-        <!-- Project Item 4 -->
-        <div class="col-md-5 col-lg-3">
-          <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal4">
-            <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="project-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/HeadAche.jpg" alt="Head Ache Icon">
+            <p>
+              For several years I would spend my free time developing short stories and long expanding narratives. Over the past decade, I have critically analysed website and software 
+              faults and successes in order to improve my own design practices. I have started to join Game Jams to teach myself new skills while also working within a very strict 48-hour 
+              timeframe. My first Game Jam was the 2018 Global Game Jam where I joined a group as a silent observer to study another designer at work within one of these jams. I then joined 
+              the 2019 GMTK Game Jam where my partner Elisabeth and I developed the short narrative experience <a href="https://late-panda.itch.io/head-ache" target="_blank">Head Ache</a> 
+              within the RPG Maker V toolkit.</p>
+            <p>
+              I have been building my knowledge of programming languages since my university days to include Ruby on Rails, PHP, Java and SQL over the past few months. I still consider 
+              myself a novice with each language, however, I am seeking to improve each one as programming still interests me.</p>
+            <p>
+              I have also completed an online course with <a href="https://www.shawacademy.com/" target="_blank">Shaw Academy</a> to refresh and build upon my knowledge and experience 
+              with HTML and CSS to better understand modern practices.</p>
+            <p>
+              I have recently spent some time familiarising myself with Figma as a web design tool. In fact I used Figma to layout my portfolio website that you see now to give me ideas on 
+              how I could improve in the future while also making small improvements that became apparent while re-creating the site on Figma.
+            </p>
           </div>
         </div>
       </div>
@@ -191,30 +203,37 @@
       <div class="w-100">
         <h2 class="mb-5">Education</h2>
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="CV-item">
           <div class="CV-content">
-            <h3 class="mb-0">University of West of Scotland</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
+            <div class="CV-container mb-3">
+              <div>
+                <h3 class="mb-0">University of West of Scotland</h3>
+                <div class="subheading">Bachelor of Science</div>
+              </div>    
+              <div class="CV-date text-md-right">
+                <span class="text-secondary">August 2006 - May 2010</span>
+              </div>
+            </div>
             <div>Computer Games Development </div>
             <p>2.2</p>
           </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">August 2006 - May 2010</span>
-          </div>
         </div>
 
-        <div class="CV-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="CV-item">
           <div class="CV-content">
-            <h3 class="mb-0">Shaw Academy</h3>
-            <div class="subheading mb-3">Mobile App Development Course</div>
-            <div class="subheading mb-3">Web Design Course</div>
-            <div class="subheading mb-3">Web Development Course</div>
-            <div class="subheading mb-3">Advanced Web Design Course</div>
-            <div class="subheading mb-3">Advanced Web Development Course</div>
-          </div>
-          <div class="CV-date text-md-right">
-            <span class="text-secondary">September 2019 - November 2019</span>
-          </div>
+            <div class="CV-container mb-3">
+              <div>
+                <h3 class="mb-0">Shaw Academy</h3>
+                <div class="subheading">Mobile App Development Course</div>
+                <div class="subheading">Web Design Course</div>
+                <div class="subheading">Web Development Course</div>
+                <div class="subheading">Advanced Web Design Course</div>
+                <div class="subheading">Advanced Web Development Course</div>
+              </div>    
+              <div class="CV-date text-md-right">
+                <span class="text-secondary">September 2019 - November 2019</span>
+              </div>
+            </div>
         </div>
 
       </div>
@@ -226,32 +245,13 @@
       <div class="w-100">
         <h2 class="mb-5">Skills</h2>
 
-        <div class="subheading mb-3">Programming Languages</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-php"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-java"></i>
-          </li>
-        </ul>
-
         <div class="subheading mb-3">Software</div>
         <ul class="list-inline-item">
           <li>
             Unity
+          </li>
+          <li>
+            Figma
           </li>
           <li>
             GameMaker
@@ -291,6 +291,34 @@
           </li>
           <br>
         </ul>
+        
+        <div class="subheading mb-3">Programming Languages</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-php"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-figma"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-adobe"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-git"></i>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -299,11 +327,14 @@
     <section class="CV-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a software developer, I enjoy keeping myself fit. I will regularly exercise at home as well as go for runs to keep myself active. I like to challenge myself to new tasks, I always seek to gain knowledge in order to improve anything I may work on in the future.</p>
-        <p class="mb-0">I enjoy attending gaming events, either as an exhibitor or as a guest. These give me the opportunity to see what is coming in the future and speak to other developers for insight into their projects. I also enjoy to write stories, I have always seen myself as a storyteller so I find myself lost in my own imagination if I am left alone with nothing to do.</p>
+        <p>Besides an interest in software development, I enjoy keeping myself fit. I will regularly exercise at home as well as go for runs to keep myself active. I like to challenge myself to new tasks and I always seek to gain knowledge in order to improve anything I may work on in the future.</p>
+        <p>I enjoy attending gaming events, either as an exhibitor or as a guest. These give me the opportunity to see what is coming in the future and speak to other developers for insight into their projects.</p>
+        <p class="mb-0">I also enjoy writing stories, I have always seen myself as a storyteller so I find myself drawn to Dungeons and Dragons and spend a large volume of my free time lost in my imagination planning the next story beats for the players of my campaign to enjoy. 
+        </p>
         <p>
         </p>
       </div>
+    </section>
   </div>
 
   <footer class="CV-section p-3 p-lg-5 d-flex align-items-center">
